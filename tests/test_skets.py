@@ -39,10 +39,8 @@ class TestSkets(unittest.TestCase):
         assert '--help  Show this message and exit.' in help_result.output
 
     def test_echo_function(self):
-        runner = CliRunner()
         sk = skets.Skets()
-        result = runner.invoke(sk.echo("This is not a drill soldier"))
-        assert "This is not a drill soldier\n" in result.output
+        assert "This is not a drill" in sk.echo("This is not a drill")
 
 if __name__ == '__main__':
     sys.exit(unittest.main())

@@ -5,4 +5,4 @@ class Skets(object):
 
     @staticmethod
     def echo(message):
-        print(message)
+        return message
