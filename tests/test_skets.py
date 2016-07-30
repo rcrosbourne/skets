@@ -18,7 +18,6 @@ from skets import skets
 from skets import cli
 
 
-
 class TestSkets(unittest.TestCase):
 
     def setUp(self):
@@ -39,6 +38,11 @@ class TestSkets(unittest.TestCase):
         assert help_result.exit_code == 0
         assert '--help  Show this message and exit.' in help_result.output
 
+    def test_echo_function(self):
+        runner = CliRunner()
+        sk = skets.Skets()
+        result = runner.invoke(sk.echo("This is not a drill soldier"))
+        assert "This is not a drill soldier\n" in result.output
 
 if __name__ == '__main__':
     sys.exit(unittest.main())

@@ -57,3 +57,19 @@ docs/_build/
 
 # PyBuilder
 target/
+
+.idea/workspace.xml
+
+.idea/dictionaries/smurf.xml
+
+.idea/inspectionProfiles/profiles_settings.xml
+
+.idea/inspectionProfiles/Project_Default.xml
+
+.idea/misc.xml
+
+.idea/modules.xml
+
+.idea/skets.iml
+
+.idea/vcs.xml
